@@ -1,2 +1,45 @@
-.node_modules
-.json
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Production build output
+dist/
+build/
+coverage/
+
+# Temporary files and directories
+tmp/
+temp/
+
+# Editor and IDE specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Test-related files
+*.test.js.snap
+cypress/videos/
+cypress/screenshots/
+
+# Other common ignored files
+*.bak
+*.swp
+*.swo
+*.orig
