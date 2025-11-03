@@ -1,53 +1,57 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f5f5f5;
-  }
-  
-  header {
-    background-color: #c1272d;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  nav button {
-    margin: 10px;
-    padding: 10px 15px;
-    border: none;
-    background: #fff;
-    color: #c1272d;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  #livros-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-  
-  .card {
-    background: white;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    width: 200px;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 10px;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #c1272d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav button {
+  margin: 10px;
+  padding: 10px 15px;
+  border: none;
+  background: #fff;
+  color: #c1272d;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+#livros-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

@@ -17,6 +17,7 @@ function renderLivros() {
       <h3>${l.titulo}</h3>
       <p><strong>Autor:</strong> ${l.autor}</p>
       <p><strong>Ano:</strong> ${l.ano}</p>
+      <p><strong>Imagem:</strong> <img src="${l.imagem}" alt="foto do livro">
     `;
     livrosContainer.appendChild(card);
   });
@@ -38,7 +39,8 @@ form.addEventListener('submit', e => {
   const novoLivro = {
     titulo: form.titulo.value,
     autor: form.autor.value,
-    ano: form.ano.value
+    ano: form.ano.value,
+    imagem: form.imagem.value
   };
   livros.push(novoLivro);
   form.reset();
