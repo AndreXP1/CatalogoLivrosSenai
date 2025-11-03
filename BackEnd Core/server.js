@@ -3,11 +3,11 @@ const path = require('path');
 const app = express();
 
 // Configura a pasta 'public' como estática
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'FrontCore')));
 
 // Rota principal (opcional, pois já serve index.html)
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'FrontCore/html', 'index.html'));
 });
 
 // Porta do servidor
