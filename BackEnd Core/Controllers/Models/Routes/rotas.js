@@ -3,6 +3,3 @@ const router = express.Router();
 
 const Livro = require('./livro')
 
-
-
-
