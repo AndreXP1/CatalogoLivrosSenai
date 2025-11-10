@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-async function conectarMongo() {
+function conectarMongo() {
   try {
-    await mongoose.connect(
+    mongoose.connect(
       'mongodb+srv://s312:SaVm2511@test.ikptu6d.mongodb.net/catalogoLivros?retryWrites=true&w=majority&authSource=admin',
       {
         useNewUrlParser: true,

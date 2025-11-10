@@ -14,12 +14,21 @@ app.use(express.static(path.join(__dirname, 'public')));
 conectarMongo();
 
 // Rutas API
-app.get('/api/livros', async (req, res) => {
+app.get('/api/livros', (req, res) => {
   try {
-    const livros = await Livro.find();
+    const livros =  Livro.find();
     res.json(livros);
   } catch (error) {
     res.status(500).json({ error: 'Erro ao buscar livros' });
+  }
+});
+
+app.delete('/api/livros/:id', async (req, res) => {
+  try {
+    await Livro.findByIdAndDelete(req.params.id);
+    res.status(204).send();
+  } catch (error) {
+    res.status(400).json({ error: 'Erro ao remover livro' });
   }
 });
 
@@ -33,14 +42,7 @@ app.post('/api/livros', async (req, res) => {
   }
 });
 
-app.delete('/api/livros/:id', async (req, res) => {
-  try {
-    await Livro.findByIdAndDelete(req.params.id);
-    res.status(204).send();
-  } catch (error) {
-    res.status(400).json({ error: 'Erro ao remover livro' });
-  }
-});
+
 
 // Página principal
 app.get('/', (req, res) => {
@@ -48,7 +50,7 @@ app.get('/', (req, res) => {
 });
 
 // Porta
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT && 3000;
 app.listen(PORT, () =>
   console.log(`🚀 Servidor rodando em http://localhost:${PORT}`)
 );
