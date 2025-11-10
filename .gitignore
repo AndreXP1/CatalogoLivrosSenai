@@ -1,0 +1,15 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+/build/
+/dist/
+*.log
+
+# IDE files
+.idea/
+.vscode/
+
+# Node.js specific
+node_modules/
