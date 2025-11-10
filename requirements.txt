@@ -1,0 +1,5 @@
+cors
+mongoose
+express
+dotenv
+node
