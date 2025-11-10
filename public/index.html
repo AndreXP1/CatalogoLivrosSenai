@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Livros SENAI</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <header>
+    <h1>📚 Catálogo de Livros SENAI</h1>
+    <nav>
+      <button id="btn-listar">Listar Livros</button>
+      <button id="btn-adicionar">Adicionar Livro</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="busca-livros">
+      <h2>Buscar Livros</h2>
+      <input type="text" id="input-busca" placeholder="Digite o título do livro">
+      <button id="btn-buscar">Buscar</button>
+    </section>
+
+    <section id="lista-livros">
+      <h2>Livros Cadastrados</h2>
+      <div id="livros-container"></div>
+    </section>
+
+    <section id="formulario" class="hidden">
+      <h2>Novo Livro</h2>
+      <form id="form-livro">
+        <input type="text" id="titulo" placeholder="Título do livro" required>
+        <input type="text" id="autor" placeholder="Autor" required>
+        <input type="number" id="ano" placeholder="Ano" required>
+        <button type="submit">Salvar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto SENAI - Catálogo de Livros © 2025</p>
+  </footer>
+
+  <script src="scripts/index.js"></script>
+</body>
+</html>

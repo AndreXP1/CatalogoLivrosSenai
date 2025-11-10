@@ -1,3 +1,4 @@
 # CatalogoLivrosSenai
 
-# test
+# Uso
+Ejecutar "npm install" para instalar las depencias
